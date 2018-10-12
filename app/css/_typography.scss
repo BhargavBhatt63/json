@@ -1,0 +1,117 @@
+/*typography*/
+/*h1, h2, h3,
+.h1,  {
+	font-family: serif;
+	font-weight: 800;
+}*/
+
+h1,
+.h1{
+	color: $dark-blue;
+	font-weight: 800;
+ 	font-size: 40px;
+}
+
+h2,
+.h2{
+
+	font-weight: 700;
+ 	font-size: 34px;
+ 	color: $dark-yellow;
+}
+
+h3{
+	font-weight: 600;
+ 	font-size: 28px;	
+}
+
+h4{
+	font-weight: 500;
+ 	font-size: 22px;
+ 	color: $dark-yellow;
+
+}
+
+h5{
+	font-weight: 400;
+ 	font-size: 18px;
+}
+
+h6{
+	font-weight: 400;
+ 	font-size: 12px;
+}
+
+p{
+	color: $dark-blue;
+	letter-spacing: 1.5px;
+}
+
+span{
+	color: $dark-blue;
+}
+
+.fancy-heading{
+		margin-bottom: 50px;
+
+		h2{
+		text-align: center;
+		}
+
+}
+
+	.pad{
+		padding: 0;
+	}
+
+	.mt-20{
+		margin-top: 20px;
+	}
+
+	.mb-10{
+		margin-bottom: 10px;
+	}
+.page-title {
+
+			display: block;
+			margin: 0 auto;
+			position: relative;
+    		border-bottom: 1px solid $black;
+			padding-top: 20px;
+			margin-bottom:30px;
+
+	&:after {
+		content: '';
+				    position: absolute;
+				    top: 90%;
+				    left: 50%;
+				    width: 30px;
+				    height: 50px;
+				    background-image: url('../images/logoo.png');
+				    background-size: cover;
+				    background-repeat: no-repeat;
+				    transform: translate(-50%, -50%);
+				    border-top: inherit;
+				    border-top-color: transparent;
+				    margin-bottom: 20px;
+	}
+}
+
+.scrollTop {
+  position: fixed;
+  right: 10%;
+  bottom: 10px;
+  background-color: #BE3F48;
+  padding: 20px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+
+  a {
+  font-size: 18px;
+  color: #fff;
+}
+}
+
+
+
+

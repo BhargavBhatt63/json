@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEMO 2 | Pagination </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/thirdparty/jquery-3.2.1.min.js"></script>
+	<script src="js/thirdparty/pagination.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style>
+
+.filtertag{
+    background-color: darkgray;
+    padding: 5px 12px;
+    list-style: none;
+    width: auto;
+    float: left;
+    margin: 2px;
+    border:1px solid darkgray;
+    border-radius: 5px;
+    display: inline;
+}
+
+.closetag{
+        cursor: pointer;
+    padding-left: 20px;
+    opacity: 0.7;
+}
+
+.closetag:hover{
+
+    opacity: 1;
+}
+
+
+ul{
+
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+	  display:block;
+    font-size: 12px;
+    padding: 10px;
+}
+
+ul li label{
+	padding-right: 30px;
+        width: 80px !important;
+}
+
+ul li span{
+	 display:block;
+    padding: 5px;
+
+}
+
+
+.pagination {
+    display: inline-block;
+    padding: 20px;
+
+
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+
+.pagination li {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: darkgray;
+}
+
+.pagination a.active {
+    background-color: #f44336!important;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #f44336!important;
+color: #ffffff}
+
+.hidden {
+    display:none;
+}
+</style>
+
+</head>
+
+
+<body onload="loadDoc()">
+
+	<h2 class="text-center">JSON DEMO</h2>
+
+
+
+	<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="example">
+                <input type="text" placeholder="Search.." name="search" id="inputText">
+                <button class=""  id="getSearchedText"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="drop-down">
+                <div class="selected">
+                     <a href="#"><span>Please select age.. <i class="pull-right fa fa-angle-double-down" aria-hidden="true"></i></span></a>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox" value="25" name="age" class="checkb" onClick="forCheckbox();"> 25</label><br>
+                    <label><input type="checkbox" value="26" name="age" class="checkb" onClick="forCheckbox();"> 26</label><br>
+                    <label><input type="checkbox" value="27" name="age" class="checkb" onClick="forCheckbox();"> 27</label><br>
+                    <label><input type="checkbox" value="28" name="age" class="checkb" onClick="forCheckbox();"> 28</label><br>
+                    <label><input type="checkbox" value="29" name="age" class="checkb" onClick="forCheckbox();"> 29</label><br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+              <div class="drop-down1">
+                <div class="selected">
+                     <a href="#"><span>Please select city.. <i class="pull-right fa fa-angle-double-down" aria-hidden="true"></i></span></a>
+                </div>
+                <div class="options1">
+                    <label><input type="checkbox" name="city" value="Ahmedabad" class="checkb1" onClick="forCheckbox();"> Ahmedabad </label><br>
+                    <label><input type="checkbox" name="city" value="Bhavnagar" class="checkb1" onClick="forCheckbox();"> Bhavnagar </label><br>
+                    <label><input type="checkbox" name="city" value="vadodra" class="checkb1" onClick="forCheckbox();"> vadodra </label><br>
+                    <label><input type="checkbox" name="city" value="jamnagar" class="checkb1" onClick="forCheckbox();"> jamnagar </label><br>
+                    <label><input type="checkbox" name="city" value="Rajkot" class="checkb1" onClick="forCheckbox();"> Rajkot </label><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        <div id="demo" style="height: 340px;"></div>
+            <div class="container" style="height: 55px;padding: 10px;">
+                <div id="checkboxValueAge"></div>
+
+                <div id="checkboxValueCity"></div>
+            </div>
+        
+
+<!--         <div class="pagination">
+        	<li href="#" id="prev" style="visibility: hidden;">&laquo;</li>
+        	<a href="#" class="active">1</a>
+          	<a href="#" class="">2</a>
+          	<a href="#" class="">3</a>
+          	<a href="#" class="">4</a>
+          	<a href="#" class="">5</a>
+         	<li href="#" id="next">&raquo;</li>
+        </div> -->
+
+</div>
+
+</body>
+</html>

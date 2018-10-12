@@ -1,0 +1,98 @@
+.drop-down {
+		.selected a{
+			background-color: #f2f2f2;
+			display: block;
+			width: 100%;
+			padding: 20px;
+			color: #000000;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+	.options{
+		display: none;
+		background: #3a3a3a;
+		color: #fff;
+		position: absolute;
+		width: 90%;
+
+		label{
+	 		padding: 10px;
+	    	width: 100%;
+
+	    	&:hover{
+	    		background-color: yellow;
+ 				color: #000;
+    			}
+			}
+
+		}
+}
+
+.drop-down1 {
+		.selected a{
+			background-color: #f2f2f2;
+			display: block;
+			width: 100%;
+			padding: 20px;
+			color: #000000;
+
+			&:hover{
+				text-decoration: none;
+			}
+		}
+
+	.options1{
+		display: none;
+		background: #3a3a3a;
+		color: #fff;
+		position: absolute;
+		width: 90%;
+		label{
+	 		padding: 10px;
+	    	width: 100%;
+
+	    	&:hover{
+	    		background-color: yellow;
+ 				color: #000;
+    			}
+			}
+
+		}
+}
+   		.addedValue{
+   			position: absolute;
+    		padding: 20px;
+    		background-color: #e0e0e0;
+    		width: 300px;
+		    left: 65%;
+		    top: 30%;
+		    border: 1px solid;
+		}
+
+.example input[type=text] {
+    padding: 16px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+.example button {
+    float: left;
+    width: 20%;
+    padding: 16px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.example button:hover {
+    background: #0b7dda;
+}
